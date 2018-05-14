@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    {{ title }}
+  </h1>
+  <ul class="numbers">
+    <li *ngFor="let value of array">{{value}}</li>
+  </ul>
+  <ul class="person">
+    <li *ngFor="let person of people">
+      <span class="name">{{person.name}} </span>
+      <span class="age">{{person.age}}</span>
+    </li>
+  </ul>
+</div>
