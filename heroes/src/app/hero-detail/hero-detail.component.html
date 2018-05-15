@@ -1,0 +1,15 @@
+<div class="selected-hero" *ngIf="hero">
+  <h2>{{ hero.name }} Details</h2>
+  <p class="age">Age:
+    <span>{{hero.age}}</span>
+  </p>
+  <p class="name">Name:
+    <span>{{hero.name}}</span>
+  </p>
+  <p class="money">
+    <label>
+      <span class="name">Money: </span>
+      <input [(ngModel)]="hero.money" [class.selected]="hero === selected-hero" placeholder="name">
+    </label>
+  </p>
+</div>

@@ -10,19 +10,5 @@
     </ul>
   </div>
 
-  <div class="selected-hero" *ngIf="selectedHero">
-    <h2>{{ selectedHero.name }} Details</h2>
-    <p class="age">Age:
-      <span>{{selectedHero.age}}</span>
-    </p>
-    <p class="name">Name:
-      <span>{{selectedHero.name}}</span>
-    </p>
-    <p class="money">
-      <label>
-        <span class="name">Money: </span>
-        <input [(ngModel)]="selectedHero.money" [class.selected]="hero === selected-hero" placeholder="name">
-      </label>
-    </p>
-  </div>
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail> 
 </div>
