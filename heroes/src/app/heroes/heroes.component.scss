@@ -4,7 +4,8 @@
   }
 h2 {
   margin: 1em 0;
-}  
+}
+  
 .wrap {
   display: flex;
   justify-content: space-between;
@@ -47,6 +48,7 @@ h2 {
     color: white;
     background-color: #aabecd;
     border-radius: 4px 0 0 4px;
+    width: 4em;
   }
   .name {
     margin: 0 .8em;   
@@ -57,6 +59,7 @@ h2 {
     border-radius: 0 4px 4px 0;
     width: 4em;
     justify-content: center;
+    text-transform: uppercase;
   }
   .text {
     position: relative;
