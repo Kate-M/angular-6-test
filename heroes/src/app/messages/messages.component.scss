@@ -1,0 +1,29 @@
+div {
+    border:1px solid #cdcdcd;
+    background: #f4f3f3;
+    padding: 1em;
+    border-radius: 4px;
+    position: absolute;
+    margin: 0.2em;
+    left: 0;
+    top:0;
+}
+h2 {
+    color: #aabecd;
+}
+p {
+    font-style: italic;
+    margin: 1em 0;
+}
+button {
+    border-radius: 4px;
+    border:none;
+    text-transform: uppercase;
+    background: #cdaaaa;
+    padding: 0.7em 1.4em;
+    color:white;
+    cursor: pointer;
+    &:hover {
+        background: darken(#cdaaaa, 10%)
+    }
+}

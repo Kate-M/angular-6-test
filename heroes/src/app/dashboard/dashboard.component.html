@@ -1,0 +1,7 @@
+<h3>Top 3</h3>
+<div class="top-box">
+  <a *ngFor="let hero of heroes" class="top-hero" (click)="onSelect(hero)">
+    <h4>{{hero.name}}</h4>
+  </a>
+</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail> 

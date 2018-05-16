@@ -15,6 +15,26 @@ body, input[text], button {
 * {
    font-family: Arial, Helvetica, sans-serif;
 }
+nav {
+  margin: 1em 0 1.5em;
+  a {
+    padding: 0.7em;
+    margin-right: 0.5em;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+  a:visited, a:link {
+    color: #607D8B;
+  }
+  a:hover {
+    background-color: #ededed;
+  }
+  a.active {
+    color: #039be5;
+  }
+}
 .container {
   max-width: 50%;
   margin:0 auto;

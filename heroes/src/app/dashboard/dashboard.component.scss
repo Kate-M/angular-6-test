@@ -1,0 +1,28 @@
+h3 {
+    margin: 1.5em 0;
+}
+.top-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.top-hero {
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #aacdaa;
+    padding: 3em;
+    color:white;
+    text-transform: uppercase;
+    &:hover {
+        background: darken( #aacdaa, 15%);
+        cursor: pointer;
+    }
+}
+h4 {
+    text-align: center;
+}

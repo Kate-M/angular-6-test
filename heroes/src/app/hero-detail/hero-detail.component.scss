@@ -1,6 +1,12 @@
+h2 {
+  margin: 1em 0;
+} 
 .selected-hero {
     flex-grow: 1;
     margin-left: 1em;
+    p {
+      margin-bottom: 0.5em;
+    }
     .money {
       input {
         height: 1.6em;
