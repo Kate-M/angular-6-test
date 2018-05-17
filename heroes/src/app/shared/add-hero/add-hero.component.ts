@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
-import { Hero } from '../heroes/hero';
-import { HeroService } from '../services/hero.service';
+import { Hero } from '../../core/models/hero.model';
+import { HeroService } from '../../core/services/hero.service';
 
 @Component({
   selector: 'app-add-hero',
@@ -22,13 +22,16 @@ export class AddHeroComponent implements OnInit {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);
   }
-  addHero() {
+  addHero(event) {
+    console.log(event.target.value);
     this.heroes.push({
       id: 20,
       age: this.age,
       name: this.name,
       money: this.money
     });
+    this.age = null;
+    this.name = this.money = '';
   }
 }
 
